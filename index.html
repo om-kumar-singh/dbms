@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel = "icon" href = "img.png"> -->
+   
+</head>
+<body>
+    
+    <div class="open">
+        <h1 class = "logo">ChappalChor.com</h1>
+        <button class="sign-up" onclick="START();">Start</button>
+        <p>Made with &#10084; in India</p>
+    </div>
+    
+     <div class="main-page">
+        <div class="title">ChappalChor.com</div>
+        <div class="navbar">
+            <a href="#" onclick="openSidebar();">All</a>
+            <a href="#" onclick="openHome()">Home</a>
+            <a href="#" onclick="openSellers();">Best Sellers</a>
+            <a href="#" onclick="openlogin();">Sign up</a>
+            <button class="modeBtn" onclick="changeMode()"></button>
+            <a href="#" onclick="openCart();">Cart <i id="icon" class="fas fa-shopping-cart"></i></a>
+            <a href="#"></a>
+            
+        </div>
+        
+        <!-- sidebar -->
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">×</a>
+            <a href="#" onclick="openlogin();">Sign-up/Login</a>
+            <a href="#" onclick="openSellers();">Best Sellers</a>
+            <a href="#" onclick="openDeals();">Today's deals</a>
+            <a href="#" onclick="openCart();">Cart</a>
+            <a href="#" onclick="openAccount();">Account</a>
+            <a href="#">Categories</a>
+            <a href="#">Settings</a>
+        </div>
+        
+        
+        <div class="content">
+            <div class="form-container" id="loginContainer" style="display: none;">
+                <div class="login">
+                    <form class="form" action="#" method="post" id="loginForm">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeLogin()">×</a>
+                        <h2>Sign Up</h2>
+                        <div class="input-group">
+                            <label for="username">Username:</label><br>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="password">Password:</label><br>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <button type="submit" class="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="home">
+                <div class="home-content">
+                    <div class="box-home" onclick="aboutProduct();">
+                        <h2>Doctor Extra Soft | Men's Wear</h2>
+                        <div class="image" style="background-image: url(doctorsoft.png);">
+                        </div>
+                    </div>
+                    <div class="box-home">
+                        
+                    </div>
+                    <div class="box-home">
+                        
+                    </div>
+                    <div class="box-home">
+                        
+                    </div>
+                    <div class="box-home">
+                        
+                    </div>
+                    <div class="box-home">
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="bestSellers">
+               
+            </div>
+            <div class="todaysdeal">
+                
+            </div>
+            <div class="cart">
+                
+            </div>
+            <div class="account">
+                <p>This is Your Account</p>
+            </div> 
+
+            <div class="product1" style="display: none;">
+                <div class="mainproduct">
+                    <h2>Doctor Extra Soft | Men's Wear</h2>
+                    <div class="image1" style="background-image: url(doctorsoft.png);"></div>
+                    
+                </div>
+                <div class="productBtn">
+                    <button class="addCart">Add to Cart</button>
+                    <button class="buynow">Buy Now</button>
+                </div>
+            
+                <div class="product-details">
+                    <h3>Product Details</h3>
+                    <ul>
+                        <li><strong>Material type:</strong> Mesh</li>
+                        <li><strong>Closure type:</strong> Hook & Loop</li>
+                        <li><strong>Heel type:</strong> Flat</li>
+                        <li><strong>Water resistance level:</strong> Water Resistant</li>
+                        <li><strong>Sole material:</strong> Ethylene Vinyl Acetate</li>
+                        <li><strong>Style:</strong> Walking</li>
+                        <li><strong>Country of Origin:</strong> India</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <!-- <footer class="footer">
+            <p>&copy; 2024 ChappalChor.com. All rights reserved.</p>
+            <p>Made with &#10084; in India</p>
+        </footer> -->
+
+        
+        
+    </div>
+    
+    <script src="index.js"></script>
+   
+    
+</body>
+</html>
